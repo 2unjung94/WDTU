@@ -7,6 +7,7 @@ table 50103 "Playlist Line"
         field(1; "Document No."; Code[20]) { }
         field(2; "Line No."; Integer) { }
         field(10; "Type"; Option) { OptionMembers = ,Resource,Show,Item; }
+        // Resource, Show, Item base application과 연결
         field(20; "No."; Code[20])
         {
             TableRelation = if (Type = const(Resource)) Resource."No."

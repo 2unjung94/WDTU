@@ -26,5 +26,6 @@ table 50106 "Listenership Entry"
         {
             SumIndexFields = "Listener Count", "Audience Share";
         }
+
     }
 }
