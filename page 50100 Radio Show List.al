@@ -26,6 +26,7 @@ page 50100 "Radio Show List"
                 field("Advertising Revenue"; Rec."Advertising Revenue") { ApplicationArea = Basic; }
                 field("Royalty Cost"; Rec."Royalty Cost") { ApplicationArea = Basic; }
             }
+            // 서브페이지? 예제
             // part(Fans2; "Radio Show Fan Factbox")
             // {
             //     ApplicationArea = Basic;
@@ -33,6 +34,7 @@ page 50100 "Radio Show List"
             // }
         }
 
+        // factbox 예제
         area(FactBoxes)
         {
             part(Fans; "Radio Show Fan Factbox")
