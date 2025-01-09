@@ -13,31 +13,58 @@ page 50101 "Radio Show Card"
         {
             group(General)  // group - 단위 레코드로 나옴
             {
-                Caption = '1';
-                field("No."; Rec."No.") { Caption = 'Number'; ApplicationArea = Basic; }
-                field("Radio Show Type"; Rec."Radio Show Type") { ApplicationArea = Basic; }
-                field("Name"; Rec."Name") { ApplicationArea = Basic; }
+                field("No."; Rec."No.") { Caption = 'Number'; ApplicationArea = Basic; Importance = Promoted; }
+                field("Radio Show Type"; Rec."Radio Show Type") { ApplicationArea = Basic; Importance = Promoted; }
+                field("Name"; Rec."Name") { ApplicationArea = Basic; Importance = Promoted; }
                 field("Run Time"; Rec."Run Time") { ApplicationArea = Basic; }
                 field("Host Code"; Rec."Host Code") { ApplicationArea = Basic; }
                 field("Host Name"; Rec."Host Name") { ApplicationArea = Basic; }
-                field("Average Listeners"; Rec."Average Listeners") { ApplicationArea = Basic; }
-                field("Audience Share"; Rec."Audience Share") { ApplicationArea = Basic; }
-                field("Advertising Revenue"; Rec."Advertising Revenue") { ApplicationArea = Basic; }
-                field("Royalty Cost"; Rec."Royalty Cost") { ApplicationArea = Basic; }
 
             }
-            // group(invoice)
-            // {
-            //     Caption = '2';
-            //     field(tset; test)
-            //     {
-            //         ApplicationArea = All;
-            //     }
-            // }
+            group(Requirements)
+            {
+                field("PSA Planned Quantity"; Rec."PSA Planned Quantity") { ApplicationArea = Basic; }
+                field("Ads Planned Quantity"; Rec."Ads Planned Quentity") { ApplicationArea = Basic; }
+                field("News Required"; Rec."News Required") { ApplicationArea = Basic; }
+                field("New Duration"; Rec."News Duration") { ApplicationArea = Basic; }
+                field("Sports Required"; Rec."Sports Require") { ApplicationArea = Basic; }
+                field("Sports Duration"; Rec."Sports Duration") { ApplicationArea = Basic; }
+                field("Weather Required"; Rec."Weather Required") { ApplicationArea = Basic; }
+                field("Weather Duration"; Rec."Weather Duration") { ApplicationArea = Basic; }
+
+            }
+            group(Statistics)
+            {
+                field("Average Listeners"; Rec."Average Listeners") { ApplicationArea = Basic; }
+                field("Audience Share"; Rec."Audience Share") { ApplicationArea = Basic; Importance = Promoted; }
+                field("Advertising Revenue"; Rec."Advertising Revenue") { ApplicationArea = Basic; }
+                field("Royalty Cost"; Rec."Royalty Cost") { ApplicationArea = Basic; }
+            }
+
         }
     }
-
-    // 변수, 프로시저 설정 구역
-    // var
-    //     test: Text[10];
+    // actions
+    // {
+    //     area(Creation)
+    //     {
+    //         action(actiontext)
+    //         {
+    //             Caption = 'ㅎㅇㅎㅇ팝업';
+    //             ApplicationArea = All;
+    //             trigger OnAction()
+    //             begin
+    //                 Message('ㅎㅇㅎㅇ');
+    //             end;
+    //         }
+    //         action(actiontext2)
+    //         {
+    //             Caption = 'ㅎㅇㅎㅇ2팝업';
+    //             ApplicationArea = All;
+    //             trigger OnAction()
+    //             begin
+    //                 Message('ㅎㅇㅎㅇ2');
+    //             end;
+    //         }
+    //     }
+    // }
 }

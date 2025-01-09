@@ -1,9 +1,13 @@
 page 50100 "Radio Show List"
 /// 필드 이름으로만 가져옴
 {
+    Caption = 'Radio Shows';
+    ApplicationArea = Basic;
     PageType = List;
     // UsageCategory = Lists; // 이걸 입력해야지 검색할 때 리스트에 나온다.
     SourceTable = "Radio Show";
+    UsageCategory = Lists;
+    CardPageId = "Radio Show Card";
 
     layout
     {
@@ -21,6 +25,20 @@ page 50100 "Radio Show List"
                 field("Audience Share"; Rec."Audience Share") { ApplicationArea = Basic; }
                 field("Advertising Revenue"; Rec."Advertising Revenue") { ApplicationArea = Basic; }
                 field("Royalty Cost"; Rec."Royalty Cost") { ApplicationArea = Basic; }
+            }
+            // part(Fans2; "Radio Show Fan Factbox")
+            // {
+            //     ApplicationArea = Basic;
+            //     SubPageLink = "Radio Show No." = field("No.");
+            // }
+        }
+
+        area(FactBoxes)
+        {
+            part(Fans; "Radio Show Fan Factbox")
+            {
+                ApplicationArea = Basic;
+                SubPageLink = "Radio Show No." = field("No.");
             }
         }
     }
