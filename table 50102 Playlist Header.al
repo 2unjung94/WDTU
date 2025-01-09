@@ -14,4 +14,14 @@ table 50102 "Playlist Header"
 
     }
 
+
+    // report 50101 - sorting 경고로 인해 key 추가
+    keys
+    {
+        key(sorting; "No.")
+        {
+            Clustered = true;
+        }
+    }
+
 }

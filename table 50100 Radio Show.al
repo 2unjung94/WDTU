@@ -60,4 +60,13 @@ table 50100 "Radio Show"
             FieldClass = FlowFilter;
         }
     }
+
+    // report 50101 - sorting 경고로 인해 key 추가
+    keys
+    {
+        key(sorting; "Radio Show Type")
+        {
+            Clustered = true;
+        }
+    }
 }
