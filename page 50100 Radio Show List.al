@@ -29,8 +29,9 @@ page 50100 "Radio Show List"
             // 서브페이지? 예제
             // part(Fans2; "Radio Show Fan Factbox")
             // {
+            //     Caption = '서브페이지 파트';
             //     ApplicationArea = Basic;
-            //     SubPageLink = "Radio Show No." = field("No.");
+            //     //SubPageLink = "Radio Show No." = field("No.");
             // }
         }
 

@@ -43,28 +43,28 @@ page 50101 "Radio Show Card"
 
         }
     }
-    // actions
-    // {
-    //     area(Creation)
-    //     {
-    //         action(actiontext)
-    //         {
-    //             Caption = 'ㅎㅇㅎㅇ팝업';
-    //             ApplicationArea = All;
-    //             trigger OnAction()
-    //             begin
-    //                 Message('ㅎㅇㅎㅇ');
-    //             end;
-    //         }
-    //         action(actiontext2)
-    //         {
-    //             Caption = 'ㅎㅇㅎㅇ2팝업';
-    //             ApplicationArea = All;
-    //             trigger OnAction()
-    //             begin
-    //                 Message('ㅎㅇㅎㅇ2');
-    //             end;
-    //         }
-    //     }
-    // }
+    actions
+    {
+        area(Creation)
+        {
+            action(actiontext)
+            {
+                Caption = 'ㅎㅇㅎㅇ팝업';
+                ApplicationArea = All;
+                trigger OnAction()
+                begin
+                    Message('ㅎㅇㅎㅇ');
+                end;
+            }
+            action(actiontext2)
+            {
+                Caption = 'ㅎㅇㅎㅇ2팝업';
+                ApplicationArea = All;
+                trigger OnAction()
+                begin
+                    Message('ㅎㅇㅎㅇ2');
+                end;
+            }
+        }
+    }
 }

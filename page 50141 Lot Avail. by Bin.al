@@ -32,13 +32,13 @@ page 50141 "Lot Avail. by Bin"
             i += 1;
             // init이라는 프로퍼티/필드 접근 의미. 의미는 값or객체를 반환하거나 설정하기 위한 목적으로 사용
             // init()은 레코드 변수 값을 초기화하는 기능
-            Rec.Init;
+            Rec.Init();
             Rec."Entry No." := i;   // := AL에서의 대입 연산자
             Rec."Item No." := LotAvail.Item_No_;
             Rec."Location Code" := LotAvail.Location_Code;
             Rec."Bin Code" := LotAvail.Bin_Code;
             Rec.Quantity := LotAvail.Sum_Quantity;
-            Rec.Insert(); // 리스트 화면에서 해당 "레코드"를 추가하는 동작
+            Rec.Insert(); // DB에서 해당 "레코드"를 추가하는 동작
             // 즉 여기서는 join 결과를 객체로 만들어서 객체에 값을 넣어 화면에 보이도록 LotAvail 객체에 담는 기능을 하고 있음.
         end;
     end;
