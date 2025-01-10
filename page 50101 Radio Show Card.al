@@ -23,15 +23,13 @@ page 50101 "Radio Show Card"
             }
             group(Requirements)
             {
-                field("PSA Planned Quantity"; Rec."PSA Planned Quantity") { ApplicationArea = Basic; }
-                field("Ads Planned Quantity"; Rec."Ads Planned Quentity") { ApplicationArea = Basic; }
+                field("PSA Required"; Rec."PSA Required") { ApplicationArea = Basic; }
+                field("Ads Required"; Rec."Ads Required") { ApplicationArea = Basic; }
+                field("Call-In Required"; Rec."Call-In Required") { ApplicationArea = Basic; }
+                field("Music Required"; Rec."Music Required") { ApplicationArea = Basic; }
                 field("News Required"; Rec."News Required") { ApplicationArea = Basic; }
-                field("New Duration"; Rec."News Duration") { ApplicationArea = Basic; }
-                field("Sports Required"; Rec."Sports Require") { ApplicationArea = Basic; }
-                field("Sports Duration"; Rec."Sports Duration") { ApplicationArea = Basic; }
-                field("Weather Required"; Rec."Weather Required") { ApplicationArea = Basic; }
-                field("Weather Duration"; Rec."Weather Duration") { ApplicationArea = Basic; }
-
+                field("Talk Required"; Rec."Talk Required") { ApplicationArea = Basic; }
+                field("Rock Required"; Rec."Rock Required") { ApplicationArea = Basic; }
             }
             group(Statistics)
             {
