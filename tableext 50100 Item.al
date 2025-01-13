@@ -1,3 +1,6 @@
+/// <summary>
+/// TableExtension Item (ID 50100) extends Record Item.
+/// </summary>
 tableextension 50100 Item extends Item
 {
     fields

@@ -1,3 +1,6 @@
+/// <summary>
+/// Page Radio Show Entries (ID 50106).
+/// </summary>
 page 50106 "Radio Show Entries"
 {
     Caption = 'Radio Show Entries';

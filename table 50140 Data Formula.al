@@ -1,3 +1,6 @@
+/// <summary>
+/// Table Data Formula (ID 50140).
+/// </summary>
 table 50140 "Data Formula"
 {
     DataClassification = ToBeClassified;

@@ -1,3 +1,6 @@
+/// <summary>
+/// Table Playlist Line (ID 50103).
+/// </summary>
 table 50103 "Playlist Line"
 {
     Caption = 'Playlist Line';

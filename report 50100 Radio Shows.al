@@ -1,3 +1,6 @@
+/// <summary>
+/// Report Radio Shows (ID 50100).
+/// </summary>
 report 50100 "Radio Shows"
 {
     ApplicationArea = Basic;

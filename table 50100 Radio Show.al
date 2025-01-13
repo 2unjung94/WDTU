@@ -1,3 +1,6 @@
+/// <summary>
+/// Table Radio Show (ID 50100).
+/// </summary>
 table 50100 "Radio Show"
 /// 코드번호와 이름은 고유해야함!
 {

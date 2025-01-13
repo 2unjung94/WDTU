@@ -1,3 +1,6 @@
+/// <summary>
+/// Report Fan Promotion List (ID 50102).
+/// </summary>
 report 50102 "Fan Promotion List"
 {
     Caption = 'Fan Promotion List';

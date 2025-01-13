@@ -1,3 +1,6 @@
+/// <summary>
+/// Page Lot Avail. by Bin (ID 50141).
+/// </summary>
 page 50141 "Lot Avail. by Bin"
 {
     PageType = List;

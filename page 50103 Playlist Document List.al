@@ -1,3 +1,6 @@
+/// <summary>
+/// Page Playlist Document List (ID 50103).
+/// </summary>
 page 50103 "Playlist Document List"
 {
     Caption = 'Playlist Document List';

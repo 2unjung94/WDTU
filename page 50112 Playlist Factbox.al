@@ -1,3 +1,6 @@
+/// <summary>
+/// Page Playlist Factbox (ID 50112).
+/// </summary>
 page 50112 "Playlist Factbox"
 {
     PageType = CardPart;
@@ -28,4 +31,6 @@ page 50112 "Playlist Factbox"
             }
         }
     }
+    // var
+    //     NW: Codeunit "NW Required";
 }

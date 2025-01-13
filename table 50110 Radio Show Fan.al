@@ -1,3 +1,6 @@
+/// <summary>
+/// Table Radio Show Fan (ID 50110).
+/// </summary>
 table 50110 "Radio Show Fan"
 {
     DataClassification = ToBeClassified;

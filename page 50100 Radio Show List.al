@@ -1,3 +1,6 @@
+/// <summary>
+/// Page Radio Show List (ID 50100).
+/// </summary>
 page 50100 "Radio Show List"
 /// 필드 이름으로만 가져옴
 {

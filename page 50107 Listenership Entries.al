@@ -1,3 +1,6 @@
+/// <summary>
+/// Page Listenership Entries (ID 50107).
+/// </summary>
 page 50107 "Listenership Entries"
 {
     Caption = 'Listenership Entries';

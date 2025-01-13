@@ -1,3 +1,6 @@
+/// <summary>
+/// Page Radio Show Fan (ID 50109).
+/// </summary>
 page 50109 "Radio Show Fan"
 {
     ApplicationArea = Basic;

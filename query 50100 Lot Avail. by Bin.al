@@ -1,3 +1,6 @@
+/// <summary>
+/// Query Lot Avail. by Bin (ID 50100).
+/// </summary>
 query 50100 "Lot Avail. by Bin"
 {
     QueryType = Normal;

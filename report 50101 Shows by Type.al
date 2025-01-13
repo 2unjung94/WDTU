@@ -1,3 +1,6 @@
+/// <summary>
+/// Report Shows by type (ID 50101).
+/// </summary>
 report 50101 "Shows by type"
 {
     UsageCategory = ReportsAndAnalysis;

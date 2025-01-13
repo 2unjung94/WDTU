@@ -1,3 +1,6 @@
+/// <summary>
+/// Page Publishers (ID 50108).
+/// </summary>
 page 50108 "Publishers"
 {
     Caption = 'Publishers';

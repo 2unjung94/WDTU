@@ -1,3 +1,6 @@
+/// <summary>
+/// Page Playlist Subpage (ID 50114).
+/// </summary>
 page 50114 "Playlist Subpage"
 {
     Caption = 'Playlist Subpage';

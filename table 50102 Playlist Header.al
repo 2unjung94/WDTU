@@ -1,3 +1,6 @@
+/// <summary>
+/// Table Playlist Header (ID 50102).
+/// </summary>
 table 50102 "Playlist Header"
 {
     Caption = 'Playlist Header';
@@ -7,11 +10,12 @@ table 50102 "Playlist Header"
         field(1; "No."; Code[20]) { }
         field(10; "Radio Show No."; Code[20])
         {
+            // Radio Show No. 필드에 입력된 경우 필드값들을 지정하는 트리거 실행
             trigger OnValidate()
             var
-                RadioShow: Record "Radio Show";
+                RadioShow: Record "Radio Show";   // Radio Show 데이터 가져오기
             begin
-                if RadioShow.Get("Radio Show No.") then begin
+                if RadioShow.Get("Radio Show No.") then begin          // RadioShow에서 해당 no가 있을 때 Playlist Header의 필드값을 지정
                     "PSAs Required" := RadioShow."PSA Required";
                     "Ads Required" := RadioShow."Ads Required";
                     "Call-In Required" := RadioShow."Call-In Required";
@@ -19,7 +23,7 @@ table 50102 "Playlist Header"
                     "News Required" := RadioShow."News Required";
                     "Talk Required" := RadioShow."Talk Required";
                     "Rock Required" := RadioShow."Rock Required";
-                end else begin
+                end else begin                                        // 없으면 필드들을 false로 지정
                     "PSAs Required" := false;
                     "Ads Required" := false;
                     "Call-In Required" := false;
@@ -37,6 +41,7 @@ table 50102 "Playlist Header"
         field(40; Duration; Duration) { }
         field(50; "Start Time"; Time)
         {
+            // Start Time이 입력이 되면 자동으로 End Time 계산하는 트리거 실행
             trigger OnValidate()
             var
                 RadioShow: Record "Radio Show";
@@ -51,6 +56,7 @@ table 50102 "Playlist Header"
         field(1011; "PSA Count"; Integer)
         {
             FieldClass = FlowField;
+            // Playlist Line의 Data Format의 유형이 "PSA"의 개수 계산
             CalcFormula = count("Playlist Line" where
             ("Document No." = field("No."), Type = const(Item), "Data Format" = const(PSA)));
             Editable = false;
@@ -59,28 +65,20 @@ table 50102 "Playlist Header"
         field(1021; "Ads Count"; Integer)
         {
             FieldClass = FlowField;
+            // Playlist Line의 Data Format의 유형이 "Advertisement"의 개수 계산
             CalcFormula = count("Playlist Line" where
             ("Document No." = field("No."), Type = const(Item), "Data Format" = const(Advertisement)));
             Editable = false;
         }
         field(1030; "Call-In Required"; Boolean) { }
         field(1040; "Music Required"; Boolean) { }
-        field(1050; "News Required"; BOolean) { }
+        field(1050; "News Required"; Boolean) { }
         field(1060; "Talk Required"; Boolean) { }
         field(1070; "Rock Required"; Boolean) { }
 
 
     }
 
-
-    // report 50101 - sorting 경고로 인해 key 추가
-    keys
-    {
-        key(sorting; "No.")
-        {
-            Clustered = true;
-        }
-    }
 
     procedure NWRequired(Category: Option ,CallIn,Music,News,Talk,Rock): Integer
     var
@@ -89,7 +87,7 @@ table 50102 "Playlist Header"
         RadioShowType: Record "Radio Show Type";
         Cnt: Integer;
     begin
-        PlaylistLine.Reset();
+        PlaylistLine.Reset(); // 변수 상태, 필터 재설정
         PlaylistLine.SetRange("Document No.", "No.");
         PlaylistLine.SetRange(Type, PlaylistLine.Type::Show);
         if PlaylistLine.FindSet then

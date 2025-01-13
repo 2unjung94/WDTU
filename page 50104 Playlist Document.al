@@ -1,3 +1,6 @@
+/// <summary>
+/// Page Playlist Document (ID 50104).
+/// </summary>
 page 50104 "Playlist Document"
 {
     PageType = Document;

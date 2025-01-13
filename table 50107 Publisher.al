@@ -1,3 +1,6 @@
+/// <summary>
+/// Table Publisher (ID 50107).
+/// </summary>
 table 50107 Publisher
 {
     Caption = 'Publisher';

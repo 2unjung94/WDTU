@@ -1,3 +1,6 @@
+/// <summary>
+/// Page Radio Show Type (ID 50102).
+/// </summary>
 page 50102 "Radio Show Type"
 {
     Caption = 'Radio Show Type';

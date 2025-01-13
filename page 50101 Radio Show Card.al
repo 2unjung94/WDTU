@@ -1,3 +1,6 @@
+/// <summary>
+/// Page Radio Show Card (ID 50101).
+/// </summary>
 page 50101 "Radio Show Card"
 /// 필드 이름으로만 가져옴
 /// radio show list와 같은 page라는 유형의 object 이므로 50101 번호를 사용함 
@@ -23,6 +26,14 @@ page 50101 "Radio Show Card"
             }
             group(Requirements)
             {
+                // field("PSA Planned Quantity"; Rec."PSA Planned Quantity") { ApplicationArea = Basic; }
+                // field("Ads Planned Quantity"; "Rec.Ads Planned Quantity") { ApplicationArea = Basic; }
+                // field("New Required"; Rec."New Required") { ApplicationArea = Basic; }
+                // field("New Duration"; Rec."New Duration") { ApplicationArea = Basic; }
+                // field("Sports Required"; Rec."Sports Required") { ApplicationArea = Basic; }
+                // field("Sports Duration"; Rec."Sports Duration") { ApplicationArea = Basic; }
+                // field("Weather Required"; Rec."Weather Required") { ApplicationArea = Basic; }
+                // field("Weather Duration"; Rec."Weather Durtaion") { ApplicationArea = Basic; }
                 field("PSA Required"; Rec."PSA Required") { ApplicationArea = Basic; }
                 field("Ads Required"; Rec."Ads Required") { ApplicationArea = Basic; }
                 field("Call-In Required"; Rec."Call-In Required") { ApplicationArea = Basic; }

@@ -1,3 +1,6 @@
+/// <summary>
+/// Page Data Formula (ID 50140).
+/// </summary>
 page 50140 "Data Formula"
 {
     PageType = List;

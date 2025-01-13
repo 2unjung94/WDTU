@@ -1,3 +1,6 @@
+/// <summary>
+/// Page Playlist Item Rates (ID 50105).
+/// </summary>
 page 50105 "Playlist Item Rates"
 {
     Caption = 'Playlist Item Rates';

@@ -1,3 +1,6 @@
+/// <summary>
+/// Table Radio Show Type (ID 50101).
+/// </summary>
 table 50101 "Radio Show Type"
 {
     Caption = 'Radio Show Type';

@@ -1,3 +1,6 @@
+/// <summary>
+/// Table Playlist Item Rate (ID 50104).
+/// </summary>
 table 50104 "Playlist Item Rate"
 {
     Caption = 'Playlist Item Rate';

@@ -1,3 +1,6 @@
+/// <summary>
+/// Table Listenership Entry (ID 50106).
+/// </summary>
 table 50106 "Listenership Entry"
 {
     Caption = 'Listenership Entry';
