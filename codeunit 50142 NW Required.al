@@ -1,5 +1,13 @@
+/// <summary>
+/// Codeunit NW Required (ID 50142).
+/// </summary>
 codeunit 50142 "NW Required"
 {
+    /// <summary>
+    /// NWRequired.
+    /// </summary>
+    /// <param name="Category">Option ,CallIn,Music,News,Talk,Rock.</param>
+    /// <returns>Return value of type Integer.</returns>
     procedure NWRequired(Category: Option ,CallIn,Music,News,Talk,Rock): Integer
     var
         PlaylistLine: Record "Playlist Line";

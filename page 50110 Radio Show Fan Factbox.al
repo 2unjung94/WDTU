@@ -7,6 +7,7 @@ page 50110 "Radio Show Fan Factbox"
     Caption = 'Radio Show Fan Factbox';
     PageType = ListPart;
     SourceTable = "Radio Show Fan";
+    // CardPageId = "Radio Show Card";
 
     layout
     {

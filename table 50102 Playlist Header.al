@@ -78,8 +78,20 @@ table 50102 "Playlist Header"
 
 
     }
+    keys
+    {
+        key(PK; "No.")
+        {
+            Clustered = true;
+        }
+    }
 
 
+    /// <summary>
+    /// NWRequired.
+    /// </summary>
+    /// <param name="Category">Option ,CallIn,Music,News,Talk,Rock.</param>
+    /// <returns>Return value of type Integer.</returns>
     procedure NWRequired(Category: Option ,CallIn,Music,News,Talk,Rock): Integer
     var
         PlaylistLine: Record "Playlist Line";

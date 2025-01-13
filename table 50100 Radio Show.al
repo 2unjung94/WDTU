@@ -67,5 +67,17 @@ table 50100 "Radio Show"
             FieldClass = FlowFilter;
         }
     }
+    keys
+    {
+        key(PK; "No.")
+        {
+            Clustered = true;
+        }
+
+        key(sorting; "Radio Show Type")
+        {
+
+        }
+    }
 
 }

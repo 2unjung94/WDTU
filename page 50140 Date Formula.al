@@ -20,6 +20,5 @@ page 50140 "Data Formula"
                 field("Date Result"; Rec."Date Result") { ApplicationArea = All; }
             }
         }
-
     }
 }
